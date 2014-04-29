@@ -2,17 +2,17 @@
 
 require "erb"
 
-content = {:bulgarian => {:heading => "Добре дошли",
+all_translations = {:bulgarian => {:heading => "Добре дошли",
 						  :name => "Милена",
 						  :intro => "Това в моята лична страница",
 						  :url => "bg/index.html",  
 						},
 
-	       :english => {:heading => "Hello World",
-				   	    :name => "Milena",
-					    :intro => "This is my personal page", 
-					    :url => "en/index.html",
-						}
+			       :english => {:heading => "Hello World",
+						   	    :name => "Milena",
+							    :intro => "This is my personal page", 
+							    :url => "en/index.html",
+								}
 		}
 
 class Content
@@ -39,17 +39,16 @@ class Template
 	end
 
 	def render(content, language)
-		textToRender =self.html.result(content.get_binding) 
+		textToRender = self.html.result(content.get_binding) 
 		File.write("#{language}/test.html", textToRender) 
 	end
 		
 end
 
-
-content.each do |key, val|
-	content = Content.new(val)
+all_translations.each do |language, translation|
+	content = Content.new(translation)
 	template = Template.new("templates/test.html.erb")
-	template.render(content, key)
+	template.render(content, language)
 end
 
 
