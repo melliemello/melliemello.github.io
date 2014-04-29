@@ -2,20 +2,83 @@
 <html>
 	<head>
 		<title>
-			Milena Drenska - about me.
+			Hello World 
 		</title>
 		
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
 		<link rel="stylesheet" type="text/css" href="../styles/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+		<script type="text/javascript" src="../javascript/scripts.js"></script>
 	</head>
 	<body>
-		<div class="language-container">
+		<nav id="language-menu" class="clearfix wrapper">
 			<ul>
-				<li> <a href="../bg/index.html">BG</a></li>
+				<li> <a class="small-button" href="../en/index.html">English</a></li>
+				<li> <a class="small-button" href="../bg/index.html">Български</a></li>
 			</ul>
-		</div>
-		<h1>About me</h1>
-		<p class="intro">Hello , this is my first web page</p>
+		</nav>		
+		<section id="welcome-homepage" class="wrapper">
+			<h1 id="welcome-header">Hello World!</h1> 
+			<p class= "half-page-center">This is the place for  my experiments, inspired by the Rails Girls Study Groups</p>
+		</section>
+
+		<nav id="main-menu" class="body">
+			<div id="menu-bg">
+			</div>
+			<span id="triangle">
+			</span>
+			<ul>
+				<li><a href="#">Tasks</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Get in touch</a></li>
+				
+			</ul>
+		</nav>
+		<section id="process" class="wrapper">
+			<ul >
+				<li class="process-flow">
+					<div class="process-gem padding-transition"></div>
+					<div class = "process-content height-transition">
+						<h2>About me</h2>
+						<p>29 years old. Works as marketing assistant, loves cycling, nature and dogs.</p>
+					</div>
+					<div class="bar">
+						<div class="bar-process padding-transition">	
+						</div>
+					</div>
+
+				</li>
+				<li class="process-flow">
+					<div class="process-gem padding-transition"></div>
+					<div class = "process-content height-transition">
+						<h2>Why Ruby?</h2>
+						<p>Why not :) Last year I started my first online courses in HTML and CSS and I got excited about the idea.</p>
+					</div>
+					<div class="bar">
+						<div class="bar-process padding-transition">
+							
+						</div>
+					</div>
+				</li>
+				<li class="process-flow">
+					<div class="process-gem padding-transition"></div>
+					<div class = "process-content height-transition">
+						<h2>It would be nice to meet you</h2>
+						<p>Facebook account: Milena Drenska</p>
+					</div>
+					<div class="bar">
+						<div class="bar-process padding-transition">
+							
+						</div>
+					</div>
+				</li>
+
+			</ul>
+			
+		</section>
 	</body>
 </html>

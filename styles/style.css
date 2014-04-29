@@ -1,4 +1,275 @@
-.intro {
-	background: url("../images/landscape.jpg") no-repeat;
-	height:200px;
+
+body, div,h1,h2,h3,h4, span, p,ul, li,a,html,ol,table,td,tr,section,article,aside,footer{
+	margin:0;
+	padding:0;
+	transition: background 0.3s ease-in;
+	-webkit-transition: background 0.3s ease-in;
+}
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+   zoom:1;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+
+/* Layout */
+
+.body{
+	width:100%;
+}
+
+.wrapper{
+	width:90%;
+	padding: 0 5% ;
+}
+
+.half-page-center{
+	width:60%;
+	margin:0 auto;
+}
+
+
+/* General */
+
+body{
+	font-family:"Open Sans", sans-serif;
+}
+
+p{
+	color:grey;
+}
+
+a {
+	text-decoration:none;
+	color:#f3b955;
+}
+
+nav li{
+
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	margin-right:20px;
+}
+
+
+/* Transitions */
+
+.padding-transition{
+	-webkit-transition: padding-top 2s; /* For Safari 3.1 to 6.0 */
+	transition: padding-top 2s;
+}
+
+.height-transition{
+	-webkit-transition: max-height 2s; /* For Safari 3.1 to 6.0 */
+	transition: max-height 2s;
+}
+
+
+/* Language Bar */ 
+nav#language-menu {
+	padding-top: 6px ;
+	padding-bottom: 6px ;
+}
+nav#language-menu li{
+	float:right;
+}
+
+a.small-button{
+	padding:2px 4px;
+	font-size:0.65em;
+	color:grey;
+	border-radius:3px;
+	text-decoration:none;
+}
+
+a.small-button:hover, a.small-button.active{
+	background: grey;
+	color:white;
+}
+
+/* Home Section*/
+
+
+section#welcome-homepage{
+	position:relative;
+	width:100%;
+	padding: 200px 0;
+	text-align:center;
+	background: url('../images/dot2.png') , url('../images/dot1.png') , url('../images/hello-world-bg.jpg');
+	background-repeat:no-repeat;
+	background-position:left 0, right top, center;
+	background-size: auto auto cover ;
+	transition: none;
+	-webkit-transition:none;
+
+}
+
+section#welcome-homepage, section#welcome-homepage p {
+	color:white;
+}
+
+h1#welcome-header{
+	font-size:4em;
+}
+
+p.intro-text {
+	text-align:center;
+}
+
+
+/* Main Navigation */
+nav#main-menu{
+	margin-top:-32px;
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+
+}
+div#menu-bg {
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	background:#fece7e;
+	height:64px;
+
+	width:60%;
+}
+
+#triangle{
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	margin-left:-5px;
+
+	width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 32px 0 32px 65px;
+border-color: transparent transparent transparent #fece7e;
+}
+
+nav#main-menu ul{
+	width:25%;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	height:32px;
+	vertical-align:bottom;
+
+}
+
+
+
+
+/* Process Animation*/
+
+section#process ul{
+	padding-top:50px;
+	width:700px;
+	margin:0 auto;
+
+}
+
+section#process li{
+	list-style-type: none;
+	position:relative;
+	width:360px;
+	height:360px;
+}
+
+div.process-gem{
+	width:50px;
+	height:50px;
+	background:orange;
+	border-radius:30px;
+}
+
+
+div.process-content{
+	padding:7px;
+	max-height: 0;
+	overflow:hidden;
+	margin-top:-60px;
+	transition-delay: 1s;
+	-webkit-transition-delay: 1s; /* Safari */
+	position:absolute;
+	left:80px;
+}
+.process-content p{
+	font-size:0.9em;
+}
+
+.process-content h2{
+	font-weight:normal;
+}
+.display-content div.process-content{
+	max-height:400px;
+	width:100%;
+	background:#f4f0f0;
+	border-radius:5px;
+
+}
+div.bar{
+
+	margin-left:200px;
+	width:3px;
+	height:400px;
+	transform:rotate(-45deg);
+-ms-transform:rotate(-45deg); /* IE 9 */
+-webkit-transform:rotate(-45deg); /* Opera, Chrome, and Safari */
+position:absolute;
+top:0;
+left:0;
+}
+
+	div.bar-process{
+		background:orange;		
 	}
+
+	
+
+	li.process-flow.active div.bar-process{
+		padding-top:400px;		
+	}
+
+	li.process-flow{
+		float:left;
+		width:60%;
+	}
+
+
+	li.process-flow:nth-child(even) {
+		float:right;
+	}
+
+	li.process-flow:nth-child(even) .bar{
+		transform:rotate(45deg);
+		-ms-transform:rotate(45deg); /* IE 9 */
+		-webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
+		left:-360px;
+	}
+
+	li.process-flow:nth-child(even) .process-content{
+		left:80px;
+	}
+
+	
+
+
+
+
+
+
