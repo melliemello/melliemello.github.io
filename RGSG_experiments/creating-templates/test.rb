@@ -3,17 +3,17 @@
 require "erb"
 
 all_translations = {:bulgarian => {:heading => "Добре дошли",
-						  :name => "Милена",
-						  :intro => "Това в моята лична страница",
-						  :url => "bg/index.html",  
-						},
+								   :name => "Милена",
+								   :intro => "Това в моята лична страница",
+								   :url => "bg/index.html",  
+								},
 
 			       :english => {:heading => "Hello World",
 						   	    :name => "Milena",
 							    :intro => "This is my personal page", 
 							    :url => "en/index.html",
 								}
-		}
+					}
 
 class Content
 	def initialize(hash)  # Creates instance variables from any dictionary
