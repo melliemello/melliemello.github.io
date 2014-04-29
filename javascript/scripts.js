@@ -8,7 +8,7 @@ function isScrolledIntoWindow (element){
 }
 
 
-function moveBackgroundsSeparetely () {
+function moveBackgroundsSeparetely() {
 	var windowScrollPosition = $(window).scrollTop();
 	var scrollSpeed = 3;
 	var property ="left "+ windowScrollPosition*0.7 +"px ,"+ "right -" + windowScrollPosition*1.1+"px,"+ "center " + "center";
