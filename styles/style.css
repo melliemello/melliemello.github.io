@@ -35,11 +35,13 @@ html[xmlns] .clearfix {
 	padding: 0 5% ;
 	margin:0 auto;
 	min-width:960px;
+	max-width:1240px;
 }
 
 .half-page-center{
-	width:60%;
+	width:50%;
 	margin:0 auto;
+	padding-top:45px;
 }
 
 
@@ -139,12 +141,23 @@ p.intro-text {
 /* Main Navigation */
 nav#main-menu{
 	width:95%;
-	padding-left:0%;
 	margin-top:-20px;
 	position:relative;
+	left:-5%;
 	z-index:0;
 	overflow:hidden;
 
+
+
+}
+
+nav#main-menu.sticky{
+	position:fixed;
+	left: -5%;  
+    top: 0; 
+    z-index: 900;  
+ 	background: white;
+ 	padding-bottom:30px;
 }
 div#menu-bg {
 	display:inline-block;
@@ -152,7 +165,6 @@ div#menu-bg {
 	*display:inline;
 	background:#fece7e;
 	height:40px;
-	
 	width:60%;
 }
 
@@ -165,7 +177,7 @@ div#menu-bg {
 	width: 0px;
 height: 0px;
 border-style: solid;
-border-width: 20px 0 20px 40px;
+border-width: 20px 0 20px 25px;
 border-color: transparent transparent transparent #fece7e;
 }
 

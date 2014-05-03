@@ -1,3 +1,5 @@
+
+
 function isScrolledIntoWindow (element){
 	var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
@@ -32,6 +34,31 @@ function startProcessBar(){
 		
 }
 
+	
+
+  $(document).ready(function() {
+
+	var element = $("#main-menu");
+	var elementTopPosition = $("#main-menu").offset().top;
+
+	function calculateAndAdd(){
+	var windowScrollPosition = $(window).scrollTop();
+
+
+	if ( windowScrollPosition > elementTopPosition){
+		element.addClass("sticky");
+	}else{
+		element.removeClass("sticky");
+	}
+
+}
+
+
+$(window).on( "scroll",  calculateAndAdd);
+});
+
 	$(window).on( "scroll", startProcessBar);
 	$(window).on( "scroll", moveBackgroundsSeparetely);
+	
+
 		
