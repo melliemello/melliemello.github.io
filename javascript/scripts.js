@@ -36,22 +36,22 @@ function startProcessBar(){
 
 	
 
-  $(document).ready(function() {
+//   $(document).ready(function() {
 
-	var element = $("#main-menu");
-	var elementTopPosition = $("#main-menu").offset().top;
+// 	var element = $("#main-menu");
+// 	var elementTopPosition = $("#main-menu").offset().top;
 
-	function calculateAndAdd(){
-	var windowScrollPosition = $(window).scrollTop();
+// 	function calculateAndAdd(){
+// 	var windowScrollPosition = $(window).scrollTop();
 
 
-	if ( windowScrollPosition > elementTopPosition){
-		element.addClass("sticky");
-	}else{
-		element.removeClass("sticky");
-	}
+// 	if ( windowScrollPosition > elementTopPosition){
+// 		element.addClass("sticky");
+// 	}else{
+// 		element.removeClass("sticky");
+// 	}
 
-}
+// }
 
 
 $(window).on( "scroll",  calculateAndAdd);
