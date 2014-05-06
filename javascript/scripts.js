@@ -54,8 +54,8 @@ function startProcessBar(){
 // }
 
 
-$(window).on( "scroll",  calculateAndAdd);
-});
+// $(window).on( "scroll",  calculateAndAdd);
+// });
 
 	$(window).on( "scroll", startProcessBar);
 	$(window).on( "scroll", moveBackgroundsSeparetely);
