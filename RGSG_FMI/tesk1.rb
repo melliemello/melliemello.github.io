@@ -18,17 +18,9 @@ class Integer
 		return list.flatten
 	end
 
-
-	# def harmonic
-	# 	harmonic_number = 0/1
-	# 	1.upto(self).each {|number| harmonic_number += 1/number.to_r}
-	# 	return harmonic_number
-	# end
-
 	def harmonic 
 		(2..self).reduce(Rational(1)){|sum, number| sum += Rational(1,number)}
-	end
-	
+	end	
 
 	def digits
 		return  self.abs.to_s.split(//).map{|digit| digit.to_i}
@@ -48,6 +40,24 @@ class Array
 	def average
 		return self.reduce(:+)/self.length.to_f	
 	end
+
+	def drop_every(index)		
+		self.reject do |element|
+			element_position = self.index(element) + 1
+			element_position % index == 0
+		end		
+	end
+
+	def combine_with(array)
+		max = self.length
+		array[max-1] = [array.slice(max-1, array.length)] if array.length > max
+		self.flat_map do |element| 
+			 index = self.index(element)
+			 array[index] != nil ? [element,array[index]].flatten : [element]
+		end		
+	end
+
 end
+
 
 
