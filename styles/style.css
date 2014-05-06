@@ -108,7 +108,7 @@ a.small-button:hover, a.small-button.active{
 /* Home Section*/
 
 
-section#welcome-homepage{
+section#welcome{
 	position:relative;
 
 	padding: 200px 5%;
@@ -123,7 +123,7 @@ section#welcome-homepage{
 
 }
 
-section#welcome-homepage, section#welcome-homepage p {
+section#welcome, section#welcome p {
 	color:white;
 }
 
@@ -293,8 +293,41 @@ left:0;
 
 	
 
+/*Content*/
+
+section#content{
+	padding-top:20px;
+	background:rgba(256,256,256,0.4);
 
 
 
+}
+
+h1.background-heading{
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	font-size:3em;
 
 
+
+}
+
+section#welcome.content{
+	padding-top:30px;
+	padding-bottom:40px;
+
+}
+
+section#content h2{
+	font-weight:lighter;
+	padding-top:25px;
+}
+
+section#content ol{
+	margin-left:60px;
+	margin-top:10px;
+}
+	section#content a.small-button {
+		margin-left:10px;
+	}
