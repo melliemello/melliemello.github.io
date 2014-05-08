@@ -11,11 +11,11 @@ class Integer
 		list = []
 		2.upto(self).each do |number|
 			if self % number == 0 and number.prime? == true				
-				list <<[number] + (self/number).prime_factors
+				list << [number] + (self/number).prime_factors
 				break
 			end			
 		end
-		return list.flatten
+		list.flatten
 	end
 
 	def harmonic 
@@ -23,11 +23,10 @@ class Integer
 	end	
 
 	def digits
-		return  self.abs.to_s.split(//).map{|digit| digit.to_i}
+		return self.abs.to_s.split(//).map{|digit| digit.to_i}
 	end
 end
  
-
 
 class Array
 	def frequencies
