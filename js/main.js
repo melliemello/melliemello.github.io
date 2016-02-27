@@ -5,8 +5,8 @@ var APP = (function () {
 
     app.init = function(){
         player = new YT.Player('player', {
-          height: window.innerHeight,
-          width: window.innerWidth,
+          height: '390',
+          width: '640',
           videoId: 'x5Dpz6w_jz4',
           events: {
             'onReady': onPlayerReady,
