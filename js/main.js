@@ -20,7 +20,7 @@ var APP = (function () {
     }
 
     function onPlayerStateChange() {
-        alert('changed');
+        
     }
 
 
