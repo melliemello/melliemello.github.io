@@ -21,6 +21,9 @@ body {
 	overflow:hidden;
 }
 
+.video-list {
+	list-style-position:outside;
+}
 
 .video-list_item {
 	position:relative;
@@ -83,15 +86,15 @@ i.menu-item {
 .button {
 	padding:5px 15px;
 	font-size:1.4em;
-	color: #222;
-	border:1px solid #ccc;
+	color: white;
+	border:1px solid #EC5858;
 	cursor:pointer;
-	background:#efefef;
+	background:#EC5858;
 	cursor:pointer;
 }
 
 .button:hover {
-	background:#ddd;
+	background:#C93838;
 }
 
 .hide-panel_trigger.active i {
@@ -103,7 +106,7 @@ i.menu-item {
 }
 
 #messages {
-	padding: 5px 15px;
+	padding: 5px 0;
 }
 
 @media screen and (max-width:992px) {
