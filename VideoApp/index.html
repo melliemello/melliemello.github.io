@@ -1,0 +1,30 @@
+<! DOCTYPE html>
+<html>
+	<head>
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/Sortable/1.4.2/Sortable.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://www.youtube.com/iframe_api"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<section id="control_panel" class="hide-panel">
+				<div class="main-menu">
+					<i class="fa fa-cogs control_panel_trigger menu-item"></i>
+					<span id="play_fullscreen" class="menu-item">Go Fullscreen</span>
+				</div>
+				<div class="hide-panel_content push-bottom">
+					<div id="messages"></div>
+					<ol id="video_list" class="video-list"></ol>
+					<div class=" clearfix">
+						<button id="change" class="button">Change Order</button>
+					</div>
+				</div>
+			</section>
+
+			<div id="player"></div>
+		</div>
+	</body>
+</html>
