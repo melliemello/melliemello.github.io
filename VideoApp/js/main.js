@@ -7,7 +7,7 @@ var VideoApp = (function () {
         hasChanged = false;
 
     app.init = function(initial_playlist){
-        playlist = initial_playlist,
+        playlist = initial_playlist;
         player = new YT.Player('player', {
           height: '390',
           width: '640',
@@ -98,7 +98,7 @@ var UI = (function () {
 
         for (var i = 0, len = videoIds.length; i < len; i++) {
             videoId = videoIds[i];
-            $videoList.append('<li class="video-list_item clearfix" data-video_id="' + videoId + '">'+ '<div class="image-container" style="background-image: url(' + videos[videoId]['thumbSrc'] + ');"></div>' + videos[videoId]['title'] + '</li>')
+            $videoList.append('<li class="video-list_item clearfix" data-video_id="' + videoId + '">'+ '<div class="image-container" style="background-image: url(' + videos[videoId]['thumbSrc'] + ');"></div><div class="video-content">' + videos[videoId]['title'] + '</div></li>')
         }
     }
 
